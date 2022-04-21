@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&display=swap');
+.Cool {
+    color: Tomato;
+    font-family: helevetica;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.p {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 50, 182);
+    font-size: 199px;
+}
+
+.p2 {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(12, 50%, 50%);
+}
