@@ -7,10 +7,26 @@ Todo (Step by Step) -- ohne Styles zu löschen
 5. Challenge Mache alle ersten p's in einem Container (article) rot 
 */
  
+ .site-slogan {
+     color: blue;
+ }
+ 
  p {
      color: blue;
  }
  
  p {
      color: green;
+ }
+ 
+ .h2 {
+     color: red;
+ }
+ 
+ #inhaltsbereich {
+     background-color: grey;
+ }
+ 
+ .p2 {
+     color: red;
  }

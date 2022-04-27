@@ -1,0 +1,234 @@
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&display=swap');
+            html {
+                scroll-behavior: smooth;
+                font-family: 'Lato', sans-serif;
+            }
+            
+            header {
+                width: 100%;
+                Height: 20%;
+                padding: 0;
+            }
+            
+            body {
+                font-family: 'Lato', sans-serif;
+                height: 80%;
+                width: max-content;
+                padding: 0;
+            }
+            
+            a {
+                text-decoration: none;
+                display: block;
+            }
+            
+            #Freitag {
+                Color: Tomato;
+                background-color: turquoise;
+                font-weight: bold;
+                /*top: 2000px;*/
+                left: 2000px;
+                top: 350px;
+            }
+            
+            #Dienstag {
+                font-size: x-large;
+                font-weight: bold;
+                /*top: 500px;*/
+                left: 500px;
+                top: 350px;
+            }
+            
+            #Montag {
+                color: moccasin;
+                font-weight: 400;
+                font-weight: bold;
+                /*top: 0px;*/
+                left: 0px;
+                top: 350px;
+            }
+            
+            #Mittwoch {
+                color: blanchedalmond;
+                font-family: 'Gill Sans';
+                font-style: oblique;
+                /*top: 1000px;*/
+                top: 350px;
+                left: 1000px;
+            }
+            
+            #Donnerstag {
+                /* top: 1500px;*/
+                left: 1500px;
+                top: 350px;
+            }
+            
+            #Samstag {
+                /*top: 2500px;*/
+                left: 2500px;
+                top: 350px;
+            }
+            
+            #Sonntag {
+                color: blanchedalmond;
+                /*top: 3000px;*/
+                left: 3000px;
+                top: 350px;
+            }
+            
+            #Freitag:visited {
+                color: pink;
+                background-color: pink;
+            }
+            
+            #Freitag:hover {
+                color: tomato;
+                background-color: pink;
+                transition: all linear 3s;
+            }
+            
+            #Montag:hover {
+                color: tomato;
+                background-color: pink;
+                transform: rotate(30deg);
+                transition: all linear 3s;
+            }
+            
+            #Dienstag:hover {
+                color: tomato;
+                background-color: pink;
+                text-align: center;
+                rotate: 190deg;
+                transition: all Linear 3s;
+            }
+            
+            #Mittwoch:hover {
+                color: tomato;
+                background-color: pink;
+                letter-spacing: 2rem;
+                transition: all Linear 3s;
+            }
+            
+            #Donnerstag:hover {
+                color: tomato;
+                background-color: pink;
+            }
+            
+            #Samstag:hover {
+                color: tomato;
+                background-color: pink;
+                rotate: 360deg;
+                transition: all Linear 3s;
+            }
+            
+            #Sonntag:hover {
+                color: tomato;
+                background-color: pink;
+                letter-spacing: 2rem;
+                transition: all Linear 1s;
+            }
+            
+            .menu {
+                position: fixed;
+                width: max-content;
+            }
+            
+            .day {
+                top: 0;
+                position: absolute;
+                width: max-content;
+                transition: all 2s;
+            }
+            /*div:hover {
+            mix-blend-mode;
+            difference;
+        }*/
+            
+            li {
+                display: inline;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            
+            li {
+                float: left;
+                font-size: 1.5rem;
+            }
+            
+            li a {
+                display: block;
+                color: grey;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+                Color: Tomato;
+                font-size: 2rem;
+            }
+            
+            .active {
+                background-color: #04AA6D;
+            }
+            
+            .main {
+                text-align: center;
+                margin: 0 auto;
+                padding: 0;
+            }
+            /*.card {
+                /*    padding: 0;
+                width: 60%;
+                float: right;
+                height: 30rem;
+                background-color: bisque;*/
+            /*  width: 18rem;
+                height: 18rem;
+                width: max-content;
+            }*/
+            
+            .help {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                width: 80%;
+                height: 80%;
+            }
+            
+            .card {
+                /*    padding: 0;
+                width: 60%;
+                float: right;
+                height: 30rem;
+                background-color: bisque;*/
+                width: 100%;
+                /*height: max-content;*/
+                margin-top: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden
+            }
+            
+            .testi {
+                justify-content: flex-start;
+                background-color: bisque;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .navi {
+                width: 100%;
+                height: 80%;
+                padding: 0 auto;
+                background-color: bisque;
+            }

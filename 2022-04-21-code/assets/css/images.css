@@ -19,3 +19,25 @@ body {
 img.water {
     width: 20vw;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+.info {
+    font-family: 'Jost', Sans-serif;
+    padding: 0.5rem;
+}
+
+h4,
+p {
+    margin: 0px;
+    padding: 0px;
+}
