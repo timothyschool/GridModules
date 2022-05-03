@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&display=swap');
+:root {
+    --red: #f33;
+    --green: #3f3;
+    --blue: blue;
+    --pink: #f3c;
+    --cyan: #3ff;
+    --yellow: #ff3;
+    --white: #eee;
+    --black: #111;
+    --gray: gray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*flex-flow: row wrap;*/
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;*/
+    /* justify-content: space-evenly;*/
+    /*align-items: stretch;*/
+    /*align-items: flex-end;*/
+    /* align-items: flex-start;*/
+    /*genau in der mitte = unten*/
+    /*justify-content: center;*/
+    /* align-items: center;*/
+    /*align-content: center;*/
+    align-items: flex-start;
+    /* align-content: flex-start;*/
+    align-content: space-evenly;
+    /*  align-self: flex-start;*/
+    /*justify-content: space-between; ohne abstand vom rand*/
+    /* justify-content: space-around; mit abstand vom rand */
+    /* justify-content: space-evenly; überall gleicher Abstand*/
+    justify-content: space-evenly;
+    background-color: var(--background);
+    width: 100%;
+    height: 100vh;
+}
+
+.flex-item {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    align-self: flex-start;
+    order: 1;
+}
+
+p {
+    order: 2;
+}
+
+.flex-item img {
+    width: 100%;
+    height: auto;
+}
+
+.red-bg {
+    background-color: var(--red);
+    align-self: flex-start;
+    order: 2;
+}
+
+.blue-bg {
+    background-color: var(--blue);
+    order: 1;
+    flex-grow: 2;
+}
+
+.green-bg {
+    background-color: var(--green);
+    order: 3;
+}
+
+.pink-bg {
+    background-color: var(--pink);
+}
+
+.cyan-bg {
+    background-color: var(--cyan);
+}
+
+.yellow-bg {
+    background-color: var(--yellow);
+}
+
+.white-bg {
+    background-color: var(--white);
+}
+
+.black-bg {
+    background-color: var(--black);
+}
+
+h1 {
+    color: tomato;
+}
