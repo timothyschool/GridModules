@@ -1,6 +1,6 @@
 let speed = 20;
 //let scale = 0.17; // Image scale (I work on 1080p monitor)
-let scale = 0.17;
+let scale = 2;
 let canvas;
 let ctx;
 let logoColor;
@@ -22,8 +22,8 @@ let myImage = new Image(100, 100);
 myImage.src = bild;
 document.body.appendChild(myImage);*/
 let dvd = {
-    x: 200,
-    y: 300,
+    x: 500,
+    y: 500,
     xspeed: 5,
     yspeed: 5,
     img: new Image()
