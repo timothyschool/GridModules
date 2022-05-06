@@ -8,6 +8,19 @@ let logoColor;
 img1.onload = someFunctionToCallWhenTheImageHasLoaded
 img1.src = '5.png';*/
 
+let randomBG = new Array();
+randomBG[0] = "1.png";
+randomBG[1] = "2.png";
+randomBG[2] = "3.png";
+randomBG[3] = "4.png";
+
+let wuerfel = Math.floor(Math.random() * randomBG.length);
+let bild = randomBG[wuerfel];
+
+/*
+let myImage = new Image(100, 100);
+myImage.src = bild;
+document.body.appendChild(myImage);*/
 let dvd = {
     x: 200,
     y: 300,
@@ -28,7 +41,7 @@ let dvd = {
     ctx = canvas.getContext("2d");
     //ctx.img.src = '5.png';
 
-    dvd.img.src = '1.png';
+    dvd.img.src = bild;
 
 
 
@@ -36,7 +49,7 @@ let dvd = {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    pickColor();
+
     update();
 })();
 /*(function main2() {
@@ -58,11 +71,13 @@ function update() {
     setTimeout(() => {
         //ctx.drawImage(img1, 500, 500);
         //Draw the canvas background
-        ctx.fillStyle = '#000';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        //ctx.fillStyle = "rgba(0,0,0,0)";
+        //ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
         // ctx.body.style.backgroundImage = "url('5.png')";
 
-        document.body.style.backgroundImage = "url('5.png')";
+        //document.body.style.backgroundImage = "url('5.png')";
         // body.width = '100%';
         //Draw DVD Logo and his background
         // ctx.fillStyle = logoColor;
@@ -98,12 +113,12 @@ function update() {
 function checkHitBox() {
     if (dvd.x + dvd.img.width * scale >= canvas.width || dvd.x <= 0) {
         dvd.xspeed *= -1;
-        pickColor();
+        pickImg();
     }
 
     if (dvd.y + dvd.img.height * scale >= canvas.height || dvd.y <= 0) {
         dvd.yspeed *= -1;
-        pickColor();
+        pickImg();
     }
 }
 /*
@@ -120,10 +135,9 @@ function checkHitBox2() {
 }*/
 
 //Pick a random color in RGB format
-function pickColor() {
-    r = Math.random() * (254 - 0) + 0;
-    g = Math.random() * (254 - 0) + 0;
-    b = Math.random() * (254 - 0) + 0;
+function pickImg() {
+    wuerfel = Math.floor(Math.random() * randomBG.length);
+    bild = randomBG[wuerfel];
+    dvd.img.src = bild;
 
-    logoColor = 'rgb(' + r + ',' + g + ', ' + b + ')';
 }
